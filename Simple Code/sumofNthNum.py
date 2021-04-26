@@ -4,7 +4,7 @@ def sum_nth(num):
     for i in range(num + 1):
         s += i
     return s
-
+# ;
 
 # find sum of nth odd numbers
 def sum_nth_odd(num):

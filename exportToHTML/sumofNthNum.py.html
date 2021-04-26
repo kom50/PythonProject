@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>sumofNthNum.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #546e7a; font-style: italic;}
+.s1 { color: #c3cee3;}
+.s2 { color: #c792ea; font-style: italic;}
+.s3 { color: #89ddff;}
+.s4 { color: #f78c6c;}
+.s5 { color: #c3e88d;}
+</style>
+</head>
+<body bgcolor="#263238">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+sumofNthNum.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># Sum of nth natural numbers</span>
+<span class="s2">def </span><span class="s1">sum_nth</span><span class="s3">(</span><span class="s1">num</span><span class="s3">):</span>
+    <span class="s1">s </span><span class="s3">= </span><span class="s4">0</span>
+    <span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">range</span><span class="s3">(</span><span class="s1">num </span><span class="s3">+ </span><span class="s4">1</span><span class="s3">):</span>
+        <span class="s1">s </span><span class="s3">+= </span><span class="s1">i</span>
+    <span class="s2">return </span><span class="s1">s</span>
+
+
+<span class="s0"># find sum of nth odd numbers</span>
+<span class="s2">def </span><span class="s1">sum_nth_odd</span><span class="s3">(</span><span class="s1">num</span><span class="s3">):</span>
+    <span class="s1">s </span><span class="s3">= </span><span class="s4">0</span>
+    <span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">range</span><span class="s3">(</span><span class="s1">num</span><span class="s3">):</span>
+        <span class="s2">if </span><span class="s1">i </span><span class="s3">% </span><span class="s4">2 </span><span class="s3">!= </span><span class="s4">0</span><span class="s3">:</span>
+            <span class="s1">s </span><span class="s3">+= </span><span class="s1">i</span>
+    <span class="s2">return </span><span class="s1">s</span>
+
+
+<span class="s0"># find sum of nth odd numbers</span>
+<span class="s2">def </span><span class="s1">sum_nth_even</span><span class="s3">(</span><span class="s1">num</span><span class="s3">):</span>
+    <span class="s1">s </span><span class="s3">= </span><span class="s4">0</span>
+    <span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">range</span><span class="s3">(</span><span class="s1">num</span><span class="s3">):</span>
+        <span class="s2">if </span><span class="s1">i </span><span class="s3">% </span><span class="s4">2 </span><span class="s3">== </span><span class="s4">0</span><span class="s3">:</span>
+            <span class="s1">s </span><span class="s3">+= </span><span class="s1">i</span>
+    <span class="s2">return </span><span class="s1">s</span>
+
+
+<span class="s0"># call function</span>
+<span class="s1">print</span><span class="s3">(</span><span class="s5">'Sum of nth natural numbers : '</span><span class="s3">, </span><span class="s1">sum_nth</span><span class="s3">(</span><span class="s4">5</span><span class="s3">))</span>
+
+<span class="s0"># call sum_nth_odd() function</span>
+<span class="s1">print</span><span class="s3">(</span><span class="s5">'sum of nth odd numbers : '</span><span class="s3">, </span><span class="s1">sum_nth_odd</span><span class="s3">(</span><span class="s4">5</span><span class="s3">))</span>
+
+<span class="s0"># call sum_nth_odd() function</span>
+<span class="s1">print</span><span class="s3">(</span><span class="s5">'sum of nth even numbers : '</span><span class="s3">, </span><span class="s1">sum_nth_even</span><span class="s3">(</span><span class="s4">5</span><span class="s3">))</span>
+
+
+</pre>
+</body>
+</html>
